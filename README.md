@@ -213,11 +213,11 @@ Ensure you have the following installed:
 ```
 
 
-7.Inside the **Media Library** add your files they will now have a link inside of your platform.
+7. Inside the **Media Library** add your files they will now have a link inside of your platform.
 ![Pages Preview](index_page.jpg)  
 
 
-8.Load our css inside the Config --> Theme --> Theme Header.  
+8. Load our css inside the Config --> Theme --> Theme Header.  
 
 ```css
 <style id="theme-color">
