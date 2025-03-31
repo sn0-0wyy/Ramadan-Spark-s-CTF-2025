@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+@font-face {
+    font-family: 'Kamali';
+    src: url("/themes/core-beta/static/webfonts/Kamali.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.kamali-font1 {
+    font-family: 'Kamali', sans-serif;
+    font-size: 60px !important;
+}
+</style>
+	<div class="jumbotron">
+		<div class="container">
+			<h1 class="kamali-font1">
+				{% trans %}Notifications{% endtrans %}
+			</h1>
+		</div>
+	</div>
+	<div class="container">
+		{% if not notifications %}
+		<h2 class="text-center">
+			{% trans %}There are no notifications yet{% endtrans %}
+		</h2>
+		{% endif %}
+		{% for notification in notifications %}
+		<div class="card bg-body-tertiary mb-4">
+			<div class="card-body">
+				<h3 class="card-title">{{ notification.title }}</h3>
+				<blockquote class="blockquote mb-0">
+					<p>{{ notification.html }}</p>
+					<small class="text-muted"><span data-time="{{ notification.date | isoformat }}"></span></small>
+				</blockquote>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+{% endblock %}
+
+{% block scripts %}
+  {{ Assets.js("assets/js/notifications.js") }}
+{% endblock %}
+

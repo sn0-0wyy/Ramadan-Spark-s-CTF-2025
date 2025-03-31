@@ -1,0 +1,54 @@
+.challenge-desc {
+  overflow-wrap: anywhere;
+  color: #F4FDFF;  
+   font-family: "Fira Code", monospace;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+[data-bs-theme="light"] .challenge-button {
+  border: 2px solid #FFBC42; // Yellow border
+  background-color: #0D111D; // Match background color
+  box-shadow: none; // Remove glow by default
+  border-radius: 8px; // Keeping existing border-radius
+
+  
+  &:hover {
+    background-color: darken(#01ACE2, 10%);
+    box-shadow: 0 0 15px #01ACE2; // Reduced hover glow
+  }
+
+  &.challenge-solved {
+    background-color: #FFBC42;
+    box-shadow: 0 0 10px #FFBC42; // Glow after solving
+
+  &:hover {
+    background-color: darken(#FFBC42, 10%);
+    box-shadow: 0 0 15px #FFBC42; 
+  }
+  }
+}
+[data-bs-theme="dark"] .challenge-button {
+  border: 2px solid #FFBC42; // Yellow border
+  background-color: #0D111D; // Match background color
+  box-shadow: none; // Remove glow by default
+  border-radius: 8px; // Keeping existing border-radius
+
+  
+  &:hover {
+    background-color: darken(#01ACE2, 10%);
+    box-shadow: 0 0 15px #01ACE2; // Reduced hover glow
+  }
+
+  &.challenge-solved {
+    background-color: #FFBC42;
+    box-shadow: 0 0 10px #FFBC42; // Glow after solving
+
+  &:hover {
+    background-color: darken(#FFBC42, 10%);
+    box-shadow: 0 0 15px #FFBC42; 
+  }
+  }
+}

@@ -1,0 +1,27 @@
+.table {
+  background-color: #0D111D; // Matches background
+  color: #F4FDFF; // Default text color
+  border: 1px solid #FFBC42; // Optional yellow border
+
+  th, td {
+    background-color: inherit; // Ensure cells follow table background
+    border-color: #191D29; // Subtle borders
+  }
+
+  thead {
+    background-color: #191D29; // Slightly different shade for contrast
+    color: #F4FDFF; // Make header text white for readability
+    font-weight: bold; // Make header text stand out
+  }
+
+  tbody tr {
+    &:nth-child(even) {
+      background-color: lighten(#0D111D, 3%); // Alternating row background
+    }
+  }
+
+  th {
+    background-color: inherit; // Makes sure the header has the same background
+    color: white !important; // Forces white text for headers
+  }
+}
