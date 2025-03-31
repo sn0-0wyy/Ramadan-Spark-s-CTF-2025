@@ -3,10 +3,13 @@
 ## Overview
 This repository contains the theme for **Ramadhan's Spark CTF 2025**. The theme includes styling, assets, and configurations necessary for setting up the event's front-end and branding.
 
-Our media manager (0xGrayaa) suggested this palette for the platform.
-![Palette](palette.jpeg)
+Our media manager (0xGrayaa) suggested this palette for the platform.  
 
-We'll be using the font [Kamali](https://www.1001fonts.com/kamali-font.html) through the .ttf file. 
+![Palette](palette.jpeg)  
+
+
+We'll be using the font [Kamali](https://www.1001fonts.com/kamali-font.html) through the .ttf file.  
+
 
 ### Main Page
 ![Index](main_page.jpg)
@@ -39,10 +42,11 @@ Ensure you have the following installed:
    cd Ramadan-Spark-s-CTF-2025
    ```
 2. Add the theme to the /CTFd/themes .
-3.docker compose your CTFd up 
-4.Open Admin Panel --> Config --> Themes --> Choose the Ramadan's theme and Press update at the bottom
-5.Now we have to add our necessary files (font,banner,logo...)
-6.Config --> Pages --> index 
+3. docker compose your CTFd up .
+4. Open Admin Panel --> Config --> Themes --> Choose the Ramadan's theme and Press update at the bottom.
+5. Now we have to add our necessary files (font,banner,logo...)
+6. Config --> Pages --> index
+   
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -207,11 +211,14 @@ Ensure you have the following installed:
   </body>
 </html>
 ```
+
+
 7.Inside the **Media Library** add your files they will now have a link inside of your platform.
-[Pages Preview](index_page.jpg)  
+![Pages Preview](index_page.jpg)  
 
 
-8.Load our css inside the Config --> Theme --> Theme Header
+8.Load our css inside the Config --> Theme --> Theme Header.  
+
 ```css
 <style id="theme-color">
 :root {--theme-color: #0d111d;}
@@ -265,6 +272,7 @@ body {background: #0D111D; color: #F4FDFF;}
 </style>
 
 ```
+
 
 Now the Theme should be ready!!
 
