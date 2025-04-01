@@ -281,7 +281,7 @@ Now the Theme should be ready!!
 
 
 ### 2. Build Failures
-  .The static folder must contain `manifest.json` .So If you run `npm run build` to compile your scss modifications this will create that `manifest.json` inside the 
+  -The static folder must contain `manifest.json` .So If you run `npm run build` to compile your scss modifications this will create that `manifest.json` inside the 
     static/.vite/ so you need to copy it a directory behind. `cp /static/.vite/manifest.json /static/` 
 
 
@@ -290,7 +290,7 @@ Now the Theme should be ready!!
 A huge thank you to the **Engineers Spark**  for making this event possible. Also, shoutout to all contributors who helped shape this project!
 
 ## Contributing
-Pull requests are welcome! If you find issues, feel free to open an issue or submit a fix.
+Pull requests are welcome! 
 
 
 
