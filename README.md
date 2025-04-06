@@ -289,8 +289,6 @@ Now the Theme should be ready!!
 ## Special Thanks
 A huge thank you to the **Engineers Spark**  for making this event possible. Also, shoutout to all contributors who helped shape this project!
 
-## Contributing
-Pull requests are welcome! 
 
 
 
